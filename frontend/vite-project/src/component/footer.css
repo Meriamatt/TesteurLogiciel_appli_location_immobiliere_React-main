@@ -1,0 +1,26 @@
+
+.footer {
+    height: 150px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 320px;
+  }
+  img {
+    width:122px;
+    height: 50px;
+  }
+  
+  .footer-txt {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  p {
+    margin: 10px
+  }
+

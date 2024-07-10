@@ -1,0 +1,32 @@
+.banner-container {
+    position: relative;
+    top: 40px;
+    width: 90%;
+  }
+  
+  .bannerImage {
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: -70px;
+    z-index: -1;
+    object-fit: cover;
+    mix-blend-mode: darken;
+    filter: brightness(0.6);
+  }
+  
+  .banner-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-left: 70px;
+  }

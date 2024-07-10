@@ -1,5 +1,7 @@
 
 import Header from "./component/Header"
+import Banner from "./component/banner"
+import Footer from "./component/footer"
 
 function Home() {
     
@@ -7,6 +9,8 @@ function Home() {
         <>
         <div>
         <Header />
+        <Banner />
+        <Footer />
       </div>
         </>
   )
