@@ -1,6 +1,6 @@
 .banner-container {
     position: relative;
-    top: 40px;
+    top: 110px;
     width: 90%;
   }
   
@@ -27,6 +27,6 @@
                 -1px -1px 0 #000;
     font-size: 42px;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 70px;
   }
