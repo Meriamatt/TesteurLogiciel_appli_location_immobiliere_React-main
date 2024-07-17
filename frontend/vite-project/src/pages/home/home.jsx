@@ -1,6 +1,7 @@
 
 
 import Banner from "../../component/banner"
+import CardsContainer from "../../component/cardContainer"
 
 
 function Home() {
@@ -9,7 +10,10 @@ function Home() {
         
     
         
-        <Banner />
+        
+        <><Banner />
+        <CardsContainer /></>
+        
         
       
         
