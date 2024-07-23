@@ -1,5 +1,6 @@
 
-
+import './error.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -7,8 +8,16 @@ function Error() {
     
     return(
         
-    
-        <p>test erreur</p>
+      <div className="error">
+      <h1 className="error-404">404</h1>
+      <span className="error-description"> 
+        Oups! La page que vous demandez nexiste pas.
+        </span>
+        <Link to="/" className="error-link">
+        Retourner sur la page d’accueil
+      </Link>
+       </div>
+      
        
         
       

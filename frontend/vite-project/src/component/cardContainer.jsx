@@ -1,21 +1,26 @@
 //import { useEffect } from "react";
-import axios from "axios";
+//import axios from "axios";
+import { useState } from "react";
 
 import Card from "./card";
 
+
+
+
 function CardsContainer() {
-  const url = "http://localhost:8080/api/properties";
-  try {
-    axios.get(url).then((response) => {
-      console.log(response.data);
+  const [data, setData] = useState([]);
+  fetch("http://localhost:8080/api/properties")
+    .then((response) => response.json())
+    .then((json) => {
+      setData(json);
+      
     });
-  } catch (error) {
-    console.log(error.response);
-  }
+ 
+ 
 
   return (
     <div className="card-container">
-      <Card />
+      <Card data={data}/>
     </div>
   );
 }

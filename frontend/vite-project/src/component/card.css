@@ -1,11 +1,10 @@
 .card-container {
     position: relative;
     top: 110px;
-    width: 90%;
     display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 92%;
+  width: 85%;
   margin-top: 110px;
   margin-left: 50px;
   padding-top: 35px;
@@ -15,19 +14,39 @@
   background-color: #f7f7f7;
   border-radius: 25px;
 }
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .card {
-    background: #ff6060;
-    ;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
-    bottom: 34px;
+    width: 275px;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: 0px;
+    background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.3));
+
   }
+
+  .card img {
+    position: relative;
+    top: -87px;
+    width: 275px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  
   .card h2 {
-    
-    top: -90px;
-    left: 20px;
-    width: 300px;
+    color: #f7f7f7;
+    position : relative;
+    z-index: 2;
+    top: 121px;
+    left: 10px;
+    width: 220px;
     height: 52px;
     line-height: 142, 6%;
     font-size: 18px;
