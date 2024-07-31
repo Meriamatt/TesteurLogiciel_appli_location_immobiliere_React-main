@@ -15,9 +15,10 @@
   border-radius: 25px;
 }
 .cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  padding-left: 3%;
+  padding-bottom: 25px;
 }
 .card {
     border-radius: 10px;
@@ -25,14 +26,13 @@
     height: 200px;
     margin-bottom: 30px;
     padding: 0px;
-    background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.3));
 
   }
 
   .card img {
     position: relative;
     top: -87px;
-    width: 275px;
+    width: 250px;
     height: 200px;
     border-radius: 10px;
     object-fit: cover;
@@ -44,11 +44,17 @@
     color: #f7f7f7;
     position : relative;
     z-index: 2;
-    top: 121px;
-    left: 10px;
-    width: 220px;
-    height: 52px;
+    top: 133px;
+    left: 1px;
+    width: 250px;
+    height: 80px;
     line-height: 142, 6%;
     font-size: 18px;
     font-weight: 500;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 20%);
+    border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
   }
+  

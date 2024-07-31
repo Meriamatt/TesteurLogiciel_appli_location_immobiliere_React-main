@@ -1,6 +1,7 @@
-import bannerImage from '../assets/image_kasa/Banner.png';
+import bannerImage from '../../assets/image_kasa/Banner.png';
 import './banner.css';
 
+// eslint-disable-next-line react/prop-types
 function Banner() {
     return (
         <section className="banner-container">
