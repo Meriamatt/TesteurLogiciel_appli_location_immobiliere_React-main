@@ -1,44 +1,6 @@
-.about {
-    margin-top: 190px;
-    margin-left: 80px;
-    align-items: center;
-    background-color: #ff6060;
-    border-radius: 5px;
-    display: inline-flex;
-    height: 47px;
-    width: 80%;
-    margin-left: 100px;
-    cursor: pointer;
-  }
-  .about h2 {
-    font-size: 18px;
-    color: white;
-    margin: 5px 10px;
-  }
-  .description-before-animation{
-    display: none;
-  }
-  .animation-active {
+.collapse{
     position: relative;
-    left: -96px;
-    background-color: #f7f7f7;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: auto;
+    top: 211px;
     width: 100%;
-    line-height: 30px;
-    padding: 15px 10px;
-  }
-  .description {
-    animation: myAnim 2s ease 0s 1 normal forwards;
-  }
-  
-  @keyframes myAnim {
-	0% {
-		transform: translateY(0);
-	}
-
-	100% {
-		transform: translateY(70px);
-	}
+    margin-left: 25px;
 }

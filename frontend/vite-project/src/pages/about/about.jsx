@@ -1,4 +1,5 @@
 import Banner from '../../component/banner/banner'
+import Collapse from '../../component/collapse/collapse'
 import AboutImageBanner from '../../assets/image_kasa/about_image.png'
 import aboutData from '../../datas/AboutData.json'
 import  './about.css';
@@ -7,11 +8,6 @@ import  './about.css';
 
 
 function About(){
-    const handleCollapseClick = (id) => {
-        const descriptionAnimation = document.querySelector(id);
-        descriptionAnimation.classList.toggle('animation-active');
-        descriptionAnimation.classList.remove('description-before-animation');
-      };
   
     return(
         
@@ -23,18 +19,12 @@ function About(){
 
 
 
-        <div>
+        <div className='collapse'>
 
-        {aboutData.map((collapse) => (
-          < div key={collapse.id}
-          title={collapse.title}
-          className="about collapse-animation"
-          onClick={() => handleCollapseClick(collapse.id)} >
-             <h2>{collapse.title}</h2>
-             <p className='description description-before-animation'>{collapse.description}</p>
-          </div>
-          
-           
+        {aboutData.map((collapse, index) => (
+
+          <Collapse key= {index} collapse={collapse} />
+                 
            
         ))}
       </div>
