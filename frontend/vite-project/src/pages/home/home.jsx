@@ -1,6 +1,7 @@
 
 
 import Banner from "../../component/banner/banner"
+import ImageBanner from '../../assets/image_kasa/Banner.png'
 //import CardsContainer from "../../component/cardContainer"
 import { useState } from "react";
 import Card from "../../component/card/card";
@@ -32,7 +33,8 @@ function Home() {
     
         
         
-        <><Banner />
+        <>
+        <Banner bannerImage={ImageBanner} />
         <CardsContainer />
         </>
         

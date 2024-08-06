@@ -13,7 +13,8 @@
  h2 {
     font-size: 18px;
     color: white;
-    margin: 5px 10px;
+    margin: 10px;
+    margin-right: 510px;
   }
   li{
     list-style: none;
@@ -41,5 +42,20 @@
   .wrapper {
     transition: height 500ms ease-in-out;
   }
+  .title{
+    display: flex;
+    align-items: center;
+  }
   
- 
+  .vector {
+    width: 25px;
+    transform: rotate(0deg);
+    transition: 0.4s 0.4s ease-in-out;
+  
+    }
+
+  .vector-rotated{
+    width: 25px;
+    transform: rotate(180deg);
+	transition: 0.4s ease-in-out;
+  }
