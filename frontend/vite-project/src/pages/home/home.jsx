@@ -34,7 +34,8 @@ function Home() {
         
         
         <>
-        <Banner bannerImage={ImageBanner} />
+        <Banner bannerImage={ImageBanner} 
+        bannerTitle = "Chez vous, partout et ailleurs"/>
         <CardsContainer />
         </>
         

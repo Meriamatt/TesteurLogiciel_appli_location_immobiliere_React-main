@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import './card.css';
-
+import { Link } from 'react-router-dom';
 
 
 function Card({ data }) {
@@ -10,7 +10,7 @@ function Card({ data }) {
           {data.map((card) => (
             <div key={card.id} className='card'>
               <h2>{card.title}</h2>
-              <img src={card.cover} alt={card.title} />
+              <Link to="/accomodation"><img src={card.cover} alt={card.title} /></Link>
             </div>
           ))}
         </div>

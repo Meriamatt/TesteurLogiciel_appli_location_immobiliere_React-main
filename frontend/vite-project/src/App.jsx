@@ -6,6 +6,7 @@ import Header from "./component/header/Header.jsx"
 import Footer from "./component/footer/footer.jsx"
 import Error from "./pages/error/error.jsx"
 import About from './pages/about/about.jsx'
+import Accomodation from './pages/accomodation/accomodation.jsx'
 
 import {
  BrowserRouter,
@@ -23,6 +24,7 @@ function App() {
       <Route path="/" element={<Home />}/> 
       <Route path="/about" element={<About />}/> 
       <Route path="*" element={<Error />}/>
+      <Route path="/accomodation" element={<Accomodation />}/>
       </Routes>
       <Footer />
      </BrowserRouter>
