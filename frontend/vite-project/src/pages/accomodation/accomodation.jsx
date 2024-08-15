@@ -1,5 +1,31 @@
-import Banner from '../../component/banner/banner'
 
+import Carrousel from '../../component/carrousel/carrousel'
+import { useState } from "react";
+//import {useNavigate, useParams } from "react-router-dom" 
+
+
+
+
+
+
+function Slider() {
+  const [dataSlide, setData] = useState([]);
+  fetch("http://localhost:8080/api/properties")
+    .then((response) => response.json())
+    .then((json) => {
+      setData(json);
+     
+      
+    });
+ 
+ 
+
+  return (
+    <div className="">
+      <Carrousel data={dataSlide} />
+    </div>
+  );
+}
 function Accomodation() {
     
     return(
@@ -8,7 +34,7 @@ function Accomodation() {
         
         
         <>
-        <Banner />
+        <Slider />
         
         </>
         

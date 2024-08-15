@@ -7,6 +7,7 @@ import { useState } from "react";
 import Card from "../../component/card/card";
 
 
+
 function CardsContainer() {
   const [data, setData] = useState([]);
   fetch("http://localhost:8080/api/properties")
@@ -37,6 +38,7 @@ function Home() {
         <Banner bannerImage={ImageBanner} 
         bannerTitle = "Chez vous, partout et ailleurs"/>
         <CardsContainer />
+        
         </>
         
         
