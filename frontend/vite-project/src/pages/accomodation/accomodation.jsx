@@ -1,51 +1,29 @@
+import { useLocation } from "react-router-dom";
+import Carrousel from "../../component/carrousel/carrousel";
+import Host from "../../component/host/host";
 
-import Carrousel from '../../component/carrousel/carrousel'
-import Host from '../../component/host/host'
-
-import { useState } from "react";
-//import {useNavigate, useParams } from "react-router-dom" 
-
-
-
-
-
+//import {useNavigate, useParams } from "react-router-dom"
 
 function Slider() {
-  const [dataSlide, setData] = useState([]);
-  fetch("http://localhost:8080/api/properties")
-    .then((response) => response.json())
-    .then((json) => {
-      setData(json);
-      
-    });
+  const location = useLocation();
+  const card  = location.state.card;
 
   return (
     <div className="">
-      <Carrousel data={dataSlide} />
-      ceci est un emssage de test 
+      <Carrousel data={card} />
+      ceci est un emssage de test
       <hr></hr>
-      <Host data={dataSlide} />
+      <Host data={card} />
     </div>
   );
 }
 
-
-
 function Accomodation() {
-    
-    return(
-        
-    
-        
-        
-        <>
-        <Slider />
-        </>
-        
-        
-      
-        
-  )
+  return (
+    <>
+      <Slider />
+    </>
+  );
 }
 
-export default Accomodation
+export default Accomodation;

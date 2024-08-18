@@ -8,14 +8,12 @@ import { Link } from 'react-router-dom';
 
 
 function Card({ data }) {
-
-
     return (
         <div className='cards'>
           {data.map((card) => (
             <div key={card.id} className='card'>
               <h2>{card.title}</h2>
-              <Link to= {"/accomodation/"+card.id}><img src={card.cover} alt={card.title} /></Link>
+              <Link to= {"/accomodation/"+card.id} state={{ card}}><img src={card.cover} alt={card.title} /></Link>
             </div>
           ))}
         </div>
