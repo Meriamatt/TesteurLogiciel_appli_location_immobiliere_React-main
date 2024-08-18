@@ -1,5 +1,7 @@
 
 import Carrousel from '../../component/carrousel/carrousel'
+import Host from '../../component/host/host'
+
 import { useState } from "react";
 //import {useNavigate, useParams } from "react-router-dom" 
 
@@ -14,18 +16,21 @@ function Slider() {
     .then((response) => response.json())
     .then((json) => {
       setData(json);
-     
       
     });
- 
- 
 
   return (
     <div className="">
       <Carrousel data={dataSlide} />
+      ceci est un emssage de test 
+      <hr></hr>
+      <Host data={dataSlide} />
     </div>
   );
 }
+
+
+
 function Accomodation() {
     
     return(
@@ -35,7 +40,6 @@ function Accomodation() {
         
         <>
         <Slider />
-        
         </>
         
         

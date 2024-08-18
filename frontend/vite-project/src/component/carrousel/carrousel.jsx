@@ -3,11 +3,12 @@ import { useState } from "react";
 import {useParams } from "react-router-dom" 
 import chevronLeft from "../../assets/image_kasa/chevron-left-solid.svg"
 import chevronRight from "../../assets/image_kasa/chevron-right-solid.svg"
+
 import './carrousel.css'
 
 
 
-function Carrousel({ data }) {
+function Carrousel({data}) {
     const { id } = useParams();
     const currentSlide = data.find(slide => slide.id === id);
 
