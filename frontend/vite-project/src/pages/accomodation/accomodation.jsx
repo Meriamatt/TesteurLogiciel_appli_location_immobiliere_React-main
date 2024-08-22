@@ -1,8 +1,12 @@
 import { useLocation } from "react-router-dom";
 import Carrousel from "../../component/carrousel/carrousel";
 import Host from "../../component/host/host";
+import Title from "../../component/title/title";
+import Tags from "../../component/tags/tags";
+import Rates from "../../component/rating/rating";
+import Collapse from "../../component/collapse/collapse";
+import "./accomodation.css"
 
-//import {useNavigate, useParams } from "react-router-dom"
 
 function Slider() {
   const location = useLocation();
@@ -14,6 +18,13 @@ function Slider() {
       ceci est un emssage de test
       <hr></hr>
       <Host data={card} />
+      <Title data={card} />
+      <Tags data={card} />
+      <Rates data={card} />
+      
+      <Collapse data={card.description} title= "Description" />
+
+      <Collapse data={card.equipments} title= "Equipements" />
     </div>
   );
 }

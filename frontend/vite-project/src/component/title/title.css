@@ -1,0 +1,18 @@
+.information{
+    position:absolute;
+    top: 710px;
+    margin-left: 2%;
+}
+.information-title{
+    margin: 0px;
+    color:#ff6060;
+    font-weight: 500;
+    font-size: 35px;
+}
+.information-location{
+    margin: 0px;
+    font-weight: 500;
+}
+
+
+

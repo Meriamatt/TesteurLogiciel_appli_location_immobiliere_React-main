@@ -1,0 +1,22 @@
+.host{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
+}
+.host-picture{
+   
+    margin-left: 0px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+    object-fit: cover;
+	
+}
+.host-name{
+    color:#ff6060;
+    font-weight: 500;
+    display: flex;
+    width: 70px;
+    margin-right: 10px;
+    text-align: end;
+}

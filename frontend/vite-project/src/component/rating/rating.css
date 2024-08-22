@@ -1,0 +1,9 @@
+.rating{
+position: absolute;
+top: 792px;
+left: 77%;
+}
+.star{
+    width: 25px;
+    margin-left: 10px;
+}
