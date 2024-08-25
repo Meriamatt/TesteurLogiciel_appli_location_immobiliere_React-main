@@ -6,8 +6,9 @@ import Tags from "../../component/tags/tags";
 import Rates from "../../component/rating/rating";
 import Collapse from "../../component/collapse/collapse";
 import "./accomodation.css"
-
-
+import { useState } from "react";
+import Card from "../../component/card/card";
+import { useEffect } from "react";
 function Slider() {
   const location = useLocation();
   const card  = location.state.card;
@@ -15,8 +16,6 @@ function Slider() {
   return (
     <div className="">
       <Carrousel data={card} />
-      ceci est un emssage de test
-      <hr></hr>
       <Host data={card} />
       <Title data={card} />
       <Tags data={card} />
@@ -28,13 +27,27 @@ function Slider() {
     </div>
   );
 }
+     // <Slider />
 
 function Accomodation() {
+  /*const location = useLocation();
+  const card  = location.state.card;
+ console.log(card);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    //let isMounted = true;
+    fetch("http://localhost:8080/api/properties"+card.id)
+      .then((res) => res.json())
+      .then((json) => {
+        if (isMounted) setData(json);
+      });
+     });*/
   return (
     <>
-      <Slider />
+   <Slider />
     </>
   );
 }
+
 
 export default Accomodation;

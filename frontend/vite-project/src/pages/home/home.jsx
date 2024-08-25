@@ -22,11 +22,11 @@ function Home() {
   const [data, setData] = useState([]);
   // to avoid multiple api requests
   useEffect(() => {
-    let isMounted = true;
-    fetch("http://localhost:8080/api/properties")
+    //let isMounted = true;
+    fetch("http://localhost:8080/api/properties/")
       .then((res) => res.json())
       .then((json) => {
-        if (isMounted) setData(json);
+        /*if (isMounted) */setData(json);
       });
   });
 
@@ -39,8 +39,13 @@ function Home() {
       <div className="card-container">
         <div className="cards">
           {data.map((card) => (
+            // eslint-disable-next-line react/jsx-key
+            <div>
             <Card card={card} />
+            </div>
           ))}
+
+          
         </div>
       </div>
     </>
