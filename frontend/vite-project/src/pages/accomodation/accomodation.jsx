@@ -5,11 +5,11 @@ import Title from "../../component/title/title";
 import Tags from "../../component/tags/tags";
 import Rates from "../../component/rating/rating";
 import Collapse from "../../component/collapse/collapse";
-import "./accomodation.css"
-import { useState } from "react";
-import Card from "../../component/card/card";
-import { useEffect } from "react";
-function Slider() {
+import "./accomodation.css";
+//import { useState } from "react";
+//import Card from "../../component/card/card";
+//import { useEffect } from "react";
+/*function Slider() {
   const location = useLocation();
   const card  = location.state.card;
 
@@ -28,7 +28,7 @@ function Slider() {
   );
 }
      // <Slider />
-
+*/
 function Accomodation() {
   /*const location = useLocation();
   const card  = location.state.card;
@@ -42,12 +42,34 @@ function Accomodation() {
         if (isMounted) setData(json);
       });
      });*/
+  const location = useLocation();
+  const card = location.state.card;
+
   return (
-    <>
-   <Slider />
-    </>
+    <div className="">
+      <Carrousel data={card} />
+      <Host data={card} />
+      <Title data={card} />
+      <Tags data={card} />
+      <Rates data={card} />
+      <div className="collapse-container">
+        <div className="first">
+          <Collapse
+            data={card.description}
+            title="Description"
+            id="description"
+          />
+        </div>
+        <div className="second">
+          <Collapse
+            data={card.equipments}
+            title="Equipements"
+            id="equipments"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
-
 
 export default Accomodation;

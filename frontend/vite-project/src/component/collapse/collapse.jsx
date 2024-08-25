@@ -10,8 +10,10 @@ function Collapse({ data, title }) {
   console.log(data);
   const handleCollapseClick = () => {
     setIsCollapsed(!isCollapsed);
+    console.log("click");
   };
- /* if (collapse) {
+
+  /* if (collapse) {
     return (
       <div
         key={collapse.id}
@@ -42,23 +44,21 @@ function Collapse({ data, title }) {
   }
 */
   return (
-    <div  className="about" onClick={handleCollapseClick}>
+    <div className="about" onClick={handleCollapseClick}>
       <div className="title">
-          <h2>{title}</h2>
-          <img
-            className={isCollapsed ? "vector" : "vector-rotated"}
-            src={Vector}
-            alt="vector"
-          />
-        </div>
+        <h2>{title}</h2>
+        <img
+          className={isCollapsed ? "vector" : "vector-rotated"}
+          src={Vector}
+          alt="vector"
+        />
+      </div>
       <div className={`description ${isCollapsed ? "wrapper" : ""}`}>
-        <ul id="list">
           {Array.isArray(data) ? (
-            data.map((item, index) => <li key={index}>{item}</li>)
+            data.map((item, index) => <li key={index}>- {item}</li>)
           ) : (
-            <li>{data}</li>
+            <p>{data}</p>
           )}
-        </ul>
       </div>
     </div>
   );
