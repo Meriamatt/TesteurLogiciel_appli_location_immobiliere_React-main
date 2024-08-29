@@ -1,5 +1,5 @@
 import "./collapse.css";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import { useState } from "react";
 import Vector from "../../assets/image_kasa/vectordown.svg";
 
@@ -25,6 +25,7 @@ function Collapse({ data, title }) {
       </div>
       <div className={`description ${isCollapsed ? "wrapper" : ""}`}>
           {Array.isArray(data) ? (
+            // eslint-disable-next-line react/prop-types
             data.map((item, index) => <li key={index}>- {item}</li>)
           ) : (
             <p>{data}</p>
