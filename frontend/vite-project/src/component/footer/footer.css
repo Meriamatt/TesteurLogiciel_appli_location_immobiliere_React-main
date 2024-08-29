@@ -7,8 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 320px;
+    margin-top: 50px;
   }
   img {
     width:122px;

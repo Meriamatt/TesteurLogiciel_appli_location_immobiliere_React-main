@@ -8,3 +8,8 @@
 .second {
   width: 50%;
 }
+.tags-rates-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

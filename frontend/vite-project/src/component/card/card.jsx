@@ -28,10 +28,11 @@ function Card() {
     <div className='cards'>
       {data.map((card) => (
         <div key={card.id} className='card'>
-          <h2>{card.title}</h2>
+          
           <Link to={"/accomodation/" + card.id} state={{ card }}>
             <img src={card.cover} alt={card.title} />
           </Link>
+          <h2>{card.title}</h2>
         </div>
       ))}
     </div>

@@ -61,8 +61,11 @@ function Accomodation() {
     <Carrousel data={card} />
     <Host data={card} />
     <Title data={card} />
+    <div className="tags-rates-container">
     <Tags data={card} />
     <Rates data={card} />
+    </div>
+    
     <div className="collapse-container">
       <div className="first">
         <Collapse
