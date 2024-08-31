@@ -7,9 +7,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    position: relative;
-    bottom: -40px;
+    margin-top: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
   }
   img {
     width:122px;

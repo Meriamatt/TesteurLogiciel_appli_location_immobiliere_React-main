@@ -1,3 +1,9 @@
+.collapse{
+  position: relative;
+  top: 225px;
+  width: 90%;
+  margin-left: 90px;
+}
 .about {
   margin-top: 35px;
   margin-left: 80px;
@@ -64,4 +70,50 @@ li {
   margin-right: 3%;
   transform: rotate(180deg);
   transition: 0.4s ease-in-out;
+}
+@media (max-width: 768px) {
+  .collapse{
+    margin-left: 20px;
+    width: 98%;
+  }
+  .about {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  .vector,
+  .vector-rotated {
+    width: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .collapse{
+    margin-left: 10px;
+    width: 96%;
+  }
+  .about {
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 6px;
+  }
+
+ 
+  .vector,
+  .vector-rotated {
+    width: 18px;
+    margin-right: 5%;
+  }
 }
