@@ -27,7 +27,10 @@ function App() {
       <Route path="*" element={<Error />}/>
       <Route path="/accomodation/:id" element={<Accomodation />}/>
       </Routes>
+      <div className='footer-container'>
       <Footer />
+      </div>
+     
 
       
      </BrowserRouter>

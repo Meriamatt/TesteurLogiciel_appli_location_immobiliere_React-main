@@ -14,7 +14,8 @@ function About(){
     
         
         
-        <><Banner bannerImage={AboutImageBanner} />
+        <>
+        <Banner bannerImage={AboutImageBanner} />
 
 
 

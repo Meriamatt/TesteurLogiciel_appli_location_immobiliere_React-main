@@ -1,16 +1,16 @@
 .banner-container {
-    position: relative;
-    top: 110px;
-    width: 90%;
+    margin-top: 110px;
+    width: 95%;
   }
   
   .bannerImage {
-    width: 100%;
+    width: 95%;
     border-radius: 25px;
-    position: absolute;
+    position: relative;
     height: 200px;
     margin-left: 50px;
     margin-top: -70px;
+    margin-bottom: -45px;
     z-index: -1;
     object-fit: cover;
     mix-blend-mode: darken;
@@ -18,6 +18,8 @@
   }
   
   .banner-title {
+    position: relative;
+    top: -100px;
     display: flex;
     justify-content: center;
     color: white;

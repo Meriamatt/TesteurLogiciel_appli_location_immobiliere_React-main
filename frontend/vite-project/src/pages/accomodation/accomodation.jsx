@@ -57,7 +57,7 @@ function Accomodation() {
     return <div>Chargement en cours...</div>;
   }
   return (
-    <div className="">
+    <div className="accomodation">
     <Carrousel data={card} />
     <Host data={card} />
     <Title data={card} />

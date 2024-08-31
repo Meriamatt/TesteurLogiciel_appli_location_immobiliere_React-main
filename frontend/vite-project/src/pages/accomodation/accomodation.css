@@ -1,3 +1,6 @@
+.accomodation{
+  flex-grow: 1; 
+}
 .collapse-container {
   display: flex;
 }
