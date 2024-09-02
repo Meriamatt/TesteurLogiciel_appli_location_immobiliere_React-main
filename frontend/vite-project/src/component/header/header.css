@@ -13,9 +13,13 @@
     padding: 27px;
     width: 30%;
     color: #ff6060;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 20px;
     font-weight: 500;
+  }
+  nav:hover{
+    
+    color: black;
   }
   .logo {
     padding:0;
@@ -66,12 +70,12 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
       align-items: center;
-      padding: 0 10px;
+      padding: 0;
   }
 
   .logo {
-      width: 70px;
-      height: 35px;
+      width: 120px;
+      height: 65px;
       margin-top: 10px;
       margin-bottom: 10px;
   }
@@ -79,6 +83,7 @@ a:hover {
   nav {
     justify-content: flex-end;
       padding: 10px 0;
+      margin-right: 0;
       font-size: 16px;
       text-align: center;
       width:54%;

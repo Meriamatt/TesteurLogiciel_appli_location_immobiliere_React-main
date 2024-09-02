@@ -13,6 +13,23 @@
     margin: 0px;
     font-weight: 500;
 }
+@media (max-width: 480px){
+.information{
+     position:absolute;
+    top: 390px;
+    margin-left: 0%;
+}
+.information-title{
+    margin: 0px;
+    color:#ff6060;
+    font-weight: 400;
+    font-size: 24px;
+}
+.information-location{
+    font-size: 15px;
+   
+}
 
+}
 
 

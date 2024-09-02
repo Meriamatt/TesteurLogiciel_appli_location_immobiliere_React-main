@@ -1,5 +1,5 @@
 .collapse{
-  margin-top: 100px;
+  margin-top: 20px;
   width: 90%;
   margin-left: 90px;
   flex-grow: 1; 
@@ -97,12 +97,16 @@ li {
 @media (max-width: 480px) {
   .collapse{
     margin-left: 10px;
+    margin-top: 50px;
     width: 96%;
   }
   .about {
     width: 95%;
-    margin-left: 10px;
-    margin-top: 25px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .title{
+    height:30px;
   }
 
   h2 {

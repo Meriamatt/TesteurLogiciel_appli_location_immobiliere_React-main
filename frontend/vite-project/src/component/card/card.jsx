@@ -29,7 +29,7 @@ function Card() {
       {data.map((card) => (
         <div key={card.id} className='card'>
           
-          <Link to={"/accomodation/" + card.id} state={{ card }}>
+          <Link to={"/accomodation/" + card.id} state={{ card }} id='card-title'>
             <img src={card.cover} alt={card.title} />
           </Link>
           <h2>{card.title}</h2>

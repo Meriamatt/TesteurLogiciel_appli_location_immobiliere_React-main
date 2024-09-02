@@ -6,3 +6,16 @@ margin-right: 6%;
     width: 25px;
     margin-left: 10px;
 }
+@media (max-width: 480px){
+.rating {
+    position: relative;
+    top: 9px;
+}
+.star{
+    width:16px;
+    margin-left: 0;
+    margin-right: 5px;
+    
+}
+
+}
