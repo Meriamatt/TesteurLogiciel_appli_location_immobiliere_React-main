@@ -7,7 +7,7 @@ function Host({ data }) {
   console.log(currentHost);
   return (
     
-        <div className="host">
+        <div className={ currentHost.titleLength < 25  ? "host" : "host-long-title"} >
           <p className="host-name">{currentHost.host.name}</p>
           <img
             className="host-picture"

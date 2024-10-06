@@ -1,4 +1,4 @@
-.host{
+.host, .host-long-title{
     display: flex;
     justify-content: flex-end;
     margin-right: 6%;
@@ -23,7 +23,11 @@
 @media (max-width: 480px){
     .host{
     position: relative;
-    top: 100px;
+    top: 125px;
+    }
+    .host-long-title{
+    position: relative;
+    top: 170px;
     }
     .host-name{
     margin-top: 0;

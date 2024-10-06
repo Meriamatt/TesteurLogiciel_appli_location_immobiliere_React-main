@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import pinkStar from '../../assets/image_kasa/star-pink.svg';
 import greyStar from '../../assets/image_kasa/star-grey.svg';
 import './rating.css'
@@ -20,7 +21,7 @@ function Rates({ data }) {
     }
 
     return (
-        <div className='rating'>
+        <div className= { data.titleLength < 25 ? "rating" : "rating-long-title"} >
             {stars}
         </div>
     );

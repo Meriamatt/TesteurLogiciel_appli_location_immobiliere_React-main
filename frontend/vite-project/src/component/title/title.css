@@ -18,12 +18,22 @@
      position:absolute;
     top: 390px;
     margin-left: 0%;
+    width: 85%;
 }
 .information-title{
     margin: 0px;
     color:#ff6060;
     font-weight: 400;
     font-size: 24px;
+    
+    
+}
+.information-long-title{
+    margin: 0px;
+    color: black;
+    font-weight: 400;
+    font-size: 24px;
+    
 }
 .information-location{
     font-size: 15px;

@@ -23,6 +23,7 @@ function Card() {
         setData(json);
       });
   };
+  
 
   return (
     <div className='cards'>

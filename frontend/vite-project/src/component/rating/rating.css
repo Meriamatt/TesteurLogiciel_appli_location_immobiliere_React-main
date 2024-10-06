@@ -1,4 +1,4 @@
-.rating{
+.rating, .rating-long-title{
 display: flex;
 margin-right: 6%;
 }
@@ -9,7 +9,11 @@ margin-right: 6%;
 @media (max-width: 480px){
 .rating {
     position: relative;
-    top: 9px;
+    top: 23px;
+}
+.rating-long-title{
+    position: relative;
+    top: 58px;
 }
 .star{
     width:16px;

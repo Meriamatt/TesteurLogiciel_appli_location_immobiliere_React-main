@@ -9,30 +9,9 @@ import "./accomodation.css";
 import { useState } from "react";
 //import Card from "../../component/card/card";
 import { useEffect } from "react";
-/*function Slider() {
-  const location = useLocation();
-  const card  = location.state.card;
 
-  return (
-    <div className="">
-      <Carrousel data={card} />
-      <Host data={card} />
-      <Title data={card} />
-      <Tags data={card} />
-      <Rates data={card} />
-      
-      <Collapse data={card.description} title= "Description" />
-
-      <Collapse data={card.equipments} title= "Equipements" />
-    </div>
-  );
-}
-     // <Slider />
-*/
 function Accomodation() {
-  /*const location = useLocation();
-  
- console.log(card);*/
+
  const cardId  = useParams().id;
   const [card, setData] = useState([]);
   console.log(cardId);
@@ -41,18 +20,16 @@ function Accomodation() {
     async function  getData()  {
       const response = await fetch ("http://localhost:8080/api/properties/"+cardId);
       const data = await response.json();
-      //.then((res) => res.json())
-      //.then((json) => {
-       // if (isMounted)
+      
           setData(data);
-        
+          console.log(card);
+          data.titleLength = data.title.length;
            
-        console.log(card);
+        
       }
       getData();
      }, [cardId]);
-  //const location = useLocation();
-  //const card = location.state.card;
+ 
   if (card.length === 0) {
     return <div>Chargement en cours...</div>;
   }

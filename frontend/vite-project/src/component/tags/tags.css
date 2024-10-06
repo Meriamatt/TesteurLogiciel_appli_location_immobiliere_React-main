@@ -1,4 +1,4 @@
-.tags{
+.tags, .long-title-tags{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -15,8 +15,16 @@
 }
 @media (max-width: 480px){
     .tags{
+        flex-wrap: wrap;
         position: relative;
-        top: 13px; 
+        top: 20px; 
+        margin-left: 0%;
+    }
+    .long-title-tags{
+
+        flex-wrap: wrap;
+        position: relative;
+        top: 56px; 
         margin-left: 0%;
     }
 .tag{
@@ -25,6 +33,10 @@
     padding-inline: 25px;
     border-radius: 5px;
     font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 }
