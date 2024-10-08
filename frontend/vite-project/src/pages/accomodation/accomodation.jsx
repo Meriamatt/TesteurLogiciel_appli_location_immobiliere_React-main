@@ -7,7 +7,7 @@ import Rates from "../../component/rating/rating";
 import Collapse from "../../component/collapse/collapse";
 import "./accomodation.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 //import Card from "../../component/card/card";
 import { useEffect } from "react";
 
