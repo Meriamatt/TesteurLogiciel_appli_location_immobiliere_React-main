@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Banner from '../../component/banner/banner'
 import Collapse from '../../component/collapse/collapse'
 import AboutImageBanner from '../../assets/image_kasa/about_image.png'
